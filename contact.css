@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-image: url('https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/avyfrbln/b0952ab5-68c8-4a91-bd56-71a58fbfbb15.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header-top nav ul li:first-child {
+    margin-left: 0;
+}
+
+.header-top nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    animation: slideInUp 1s ease; 
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeIn 1s ease; 
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    animation: fadeIn 1s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-image: url('https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/avyfrbln/b0952ab5-68c8-4a91-bd56-71a58fbfbb15.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 10px; 
+    text-align: center;
+    font-size: 12px; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: slideInUpFooter 1s ease;
+}
+
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUpFooter {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

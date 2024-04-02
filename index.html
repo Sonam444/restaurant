@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonam's Buffet Paradise</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://st3.depositphotos.com/29179304/33207/v/600/depositphotos_332073668-stock-video-white-food-background-concept-design.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: #fff;
+            padding: 20px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-top nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-top nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .header-top nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        .header-top nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px; 
+        }
+
+        .header-content {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            padding: 10px; 
+            text-align: center;
+            font-size: 12px; 
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            transition: transform 0.3s ease; 
+            transform: translateY(100%); 
+        }
+
+        footer:hover {
+            transform: translateY(0); 
+        }
+
+        .footer-nav-links {
+            list-style-type: none;
+        }
+
+        .footer-nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .footer-nav-links li:first-child {
+            margin-left: 0;
+        }
+
+        .footer-nav-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .image-gallery .image {
+            flex: 0 0 calc(33.33% - 20px); 
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery .image:last-child {
+            margin-right: 0;
+        }
+
+        
+        .image-gallery .image img {
+            max-width: 100%; 
+            max-height: 200px; 
+            object-fit: cover; 
+        }
+
+        
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.8); 
+            color: #000;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Welcome to Sonam's Buffet Paradise</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact/Reservation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <p>Serving you the most delicious and authentic buffet experience made with love and fresh ingredients.</p>
+        </div>
+    </header>
+    
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>Sonam's Buffet Paradise, led by renowned Michelin star chef Sonam Tamang, is an epitome of culinary excellence. With a rich history of gastronomic innovation, Sonam has earned numerous prestigious awards and accolades, including the Michelin Star, Golden Chef's Hat, and International Culinary Excellence Award. Our restaurant boasts a warm and welcoming atmosphere, where guests are treated to impeccable service and unforgettable dining experiences. Committed to maintaining the highest standards of hygiene and cleanliness, we ensure a safe and enjoyable environment for all our patrons. Come and indulge in a gastronomic journey like no other at Sonam's Buffet Paradise.</p>
+    </section>
+
+    <section class="food-sayings">
+        <h2>Famous Food Sayings</h2>
+        <div class="saying">
+            <blockquote>
+                "One cannot think well, love well, sleep well, if one has not dined well." - Virginia Woolf
+            </blockquote>
+        </div>
+        <div class="saying">
+            <blockquote>
+                "Cooking is like love. It should be entered into with abandon or not at all." - Harriet Van Horne
+            </blockquote>
+        </div>
+        <!-- Add more famous food sayings here -->
+    </section>
+    
+    <section class="image-gallery">
+        <div class="image">
+            <img src="https://cdn.eatigo.com/restaurant-image/1621_eba1a7d3-7aa5-4d12-8712-35c7f9f5da19.jpeg">
+        </div>
+        <div class="image">
+            <img src="https://i.pinimg.com/736x/4f/b5/3c/4fb53c7822fb6371ad46eef424fe40bd.jpg" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq3VOjG8MS88qkf0UCYaFMmpW0V46ZEun6vX2Nm-37LQ&s" alt="Image 3">
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <ul class="footer-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact/Reservation</a></li>
+            </ul>
+        </nav>
+        <div class="awards">
+            <h3>Awards</h3>
+            <ul>
+                <li>Best Buffet Restaurant 2023</li>
+                <li>Top Food Destination 2022</li>
+                <li>Chef's Choice Award 2021</li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Sonam's Buffet Paradise</p>
+    </footer>
+</body>
+</html>
